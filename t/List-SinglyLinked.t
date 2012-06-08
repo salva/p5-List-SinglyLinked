@@ -3,7 +3,7 @@
 use strict;
 use warnings;
 
-use Test::More tests => 8660;
+use Test::More tests => 8659;
 
 BEGIN { use_ok('List::SinglyLinked') };
 
