@@ -4,10 +4,6 @@ Makefile.PL
 MANIFEST
 ppport.h
 README
-SinglyLinked.bs
-SinglyLinked.c
-SinglyLinked.o
-SinglyLinked.s
 SinglyLinked.xs
 t/List-SinglyLinked.t
 t/pods.t

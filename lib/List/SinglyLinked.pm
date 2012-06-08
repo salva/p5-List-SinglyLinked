@@ -15,7 +15,7 @@ __END__
 
 =head1 NAME
 
-List::SinglyLinked - Singly linked list in Perl
+List::SinglyLinked - Singly linked lists in Perl
 
 =head1 SYNOPSIS
 
