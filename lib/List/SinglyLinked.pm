@@ -101,7 +101,7 @@ Return a false value when the end of the list is reached.
 
 =item $e = $l->next
 
-Returns the next element at the iterator possition.
+Returns the next element at the iterator position.
 
 =item $l->insert($e)
 

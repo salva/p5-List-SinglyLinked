@@ -18,7 +18,7 @@ struct st_node {
     SV *sv;
 };
 
-list *
+static list *
 list_new() {
     list *l = (list*)malloc(sizeof(list));
     l->head = NULL;
@@ -27,7 +27,7 @@ list_new() {
     return l;
 }
 
-node *
+static node *
 node_new(SV *sv) {
     node *n = (node *)malloc(sizeof(node));
     n->next = NULL;
