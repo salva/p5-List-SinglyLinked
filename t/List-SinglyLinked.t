@@ -75,6 +75,7 @@ is_deeply([$l->elements], [qw(doz bar fuu goo)], "remove at iterator");
 is($l->remove, undef, "remove at the end returns undef");
 is_deeply([$l->elements], [qw(doz bar fuu goo)], "remove at the end does nothing");
 
+
 # and finally some brute force testing:
 
 for my $size (10, 100, 500, 1000) {
@@ -125,6 +126,4 @@ for my $size (10, 100, 500, 1000) {
     }
 }
 
-
-done_testing();
 
