@@ -41,15 +41,19 @@ list_length(list *l) {
 }
 
 static SV *
+list_at(list *l, node **at) {
+    node *n = *at;
+    return (n ? newSVsv(n->sv) : &PL_sv_undef);
+}
+
+static SV *
 list_head(list *l) {
-    node *h = l->head;
-    return (h ? newSVsv(h->sv) : &PL_sv_undef);
+    return list_at(l, &l->head);
 }
 
 static SV *
 list_next(list *l) {
-    node *n = *(l->iterator);
-    return (n ? newSVsv(n->sv) : &PL_sv_undef);
+    return list_at(l, l->iterator);
 }
 
 static int
