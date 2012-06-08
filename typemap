@@ -1,0 +1,15 @@
+TYPEMAP
+
+list * T_LIST
+
+INPUT
+T_LIST
+     $var = INT2PTR($type, SvIV((SV*)SvRV($arg)));
+     if (!$var) Perl_croak(aTHX_ \"Null pointer error\");
+
+OUTPUT
+T_LIST
+     if ($var)
+         sv_setref_pv($arg, \"List::SinglyLinked\", (void*)$var);
+    else
+         sv_setsv($arg, &PL_sv_undef);
