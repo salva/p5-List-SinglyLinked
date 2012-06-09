@@ -233,6 +233,7 @@ PPCODE:
         XSRETURN(l->len);
     }
     else {
+        /* in scalar context return the list length */
         mPUSHu(l->len);
         XSRETURN(1);
     }
